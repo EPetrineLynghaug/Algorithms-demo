@@ -6,7 +6,7 @@
 This project demonstrates how algorithms work, focusing on sorting and searching techniques. The demo will explore various key features of algorithms, pseudocode, and efficiency analysis.
 
 
-## Key Features of 
+## Key Features 
 
 <details>
   <summary><strong>Click to read more</strong></summary>
