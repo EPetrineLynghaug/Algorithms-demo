@@ -1,4 +1,4 @@
-# 	Lecture Notes, Algorithms Demo:
+# 	Lecture Notes, Algorithms Demo
 
 
 ## Description
