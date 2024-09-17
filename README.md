@@ -14,7 +14,7 @@ This project demonstrates how algorithms work, focusing on sorting and searching
   - **Sorting algorithms:** Demonstrating common sorting methods such as bubble sort, quicksort, and merge sort.
   - **Searching algorithms:** Exploring both linear search and binary search.  
   - **Pseudocode examples:** Step-by-step breakdowns of how each algorithm is structured.
-  - **Performance analysis:**Time and space complexity comparisons using Big O notation.
+  - **Performance analysis:** Time and space complexity comparisons using Big O notation.
   - **Interactive examples:** Users can input data to see how algorithms process and return results.
 
 </details>
