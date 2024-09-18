@@ -3,6 +3,7 @@ import { makeRandomList } from "./modules/utils.js";
 import { linearSearch } from "./modules/linear-search.js";
 import { binarySearch } from "./modules/binary-search.js";
 import { insertionSort } from "./modules/insertionSort.js";
+import { quickSort } from "./modules/quick-sort.js";
 
 const myList = makeRandomList(10_000_000, 10_000_000);
 // console.log(myList);
@@ -41,9 +42,16 @@ console.log(result);
 console.timeEnd("binary search");
 
 //insertion sort//
-let randArr2 = makeRandomList(10_000_000, 1000);
+let randArr2 = makeRandomList(100_000, 1000);
 console.log("ranArr2: " + randArr2);
 
 console.time("insertion sort");
 let insertSortedArr = insertionSort(randArr2);
-console.timeEnd("insertion sort");
+// console.timeEnd("insertion sort");
+
+//quick sort//
+
+console.time("quick sort");
+let quickSortedArr = quickSort(randArr2);
+console.timeEnd("quick sort");
+//console.log("quickSortedArr: ");

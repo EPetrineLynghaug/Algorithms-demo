@@ -1,4 +1,4 @@
-# 	Lecture Notes, Algorithms Demo
+# 	Lecture Notes, Algorithms.
 
 
 ## Description
@@ -128,16 +128,51 @@ In the worst case, where the list is in reverse order, the time complexity is O(
 
 </details>
 
+## Quick Sort
+
+<details>
+  <summary><strong>Click to read more</strong></summary>
+
+Quick sort was developed around the 1960s and follows the *divide and conquer* principle. The algorithm breaks down a larger problem into smaller subproblems, solving them recursively. What makes quick sort efficient is how it selects a "pivot" element and rearranges the list so that smaller elements are moved to the left and larger elements to the right. This process ensures that the pivot is correctly positioned, and it allows us to recursively sort the sublists on either side of the pivot. Eventually, we get down to lists with one or two elements, which are trivially sorted.
+
+However, because quick sort moves elements to the left or right based on comparisons, it is not a stable sort. Stability refers to whether equal elements retain their relative order; quick sort may change this order due to the way it swaps elements.
+
+### How It Works
+1. **Base Case:** If the list contains 1 or 2 elements, it is already sorted, and the algorithm simply returns the list.
+2. **Recursive Case:** Otherwise, quick sort selects a pivot and partitions the list so that elements smaller than the pivot go to the left, and larger elements go to the right. The pivot is now in its correct position.
+3. **Subproblem:** The process is repeated on the left and right sublists until all elements are sorted.
+
+A critical aspect of quick sort is **pivot selection**. The efficiency of the algorithm heavily depends on choosing a good pivot.
+
+### Worst Case Scenario
+In the worst case, quick sort can degrade to O(n²) time complexity. This happens when the pivot consistently divides the list unevenly, such as when selecting the largest or smallest element as the pivot. Fortunately, this is rare and can be mitigated by choosing a better pivot selection strategy.
+
+### Choosing an Efficient Pivot
+- **First Element Pivot:** Early versions of quick sort often used the first element as the pivot. However, this leads to performance issues when the list is already sorted, causing the algorithm to enter its worst-case scenario.
+- **Random Pivot:** A more reliable approach is to select a random pivot. By choosing a pivot randomly, you significantly reduce the chances of consistently poor performance.
+- **Median-of-Three Pivot:** Another commonly used strategy is the "median of three" method. This technique chooses the pivot as the median of the first, middle, and last elements of the list. It’s a quick and easy method to find a more balanced pivot, which tends to reduce the chances of hitting the worst-case scenario.
+
+### Best Case Scenario
+The best-case scenario occurs when the pivot consistently divides the list into two nearly equal parts. In this case, quick sort runs in O(n log n) time, which is one of the fastest sorting algorithms available for large datasets.
+
+</details>
+
 ## Conclusion
 
 <details>
   <summary><strong>Click to read more</strong></summary>
 
-In this project, we have explored and demonstrated fundamental algorithms, specifically focusing on sorting and searching techniques. By implementing and measuring these algorithms, we gained valuable insights into their efficiency and practical applications.
+In this project, we explored and implemented several fundamental algorithms, with a primary focus on sorting and searching techniques. By analyzing and benchmarking these algorithms, we gained valuable insights into their computational efficiency and practical applications in various scenarios.
 
-Our experiments included measuring execution times for various tasks: finding the maximum value, performing linear searches on both unsorted and sorted lists, sorting data, and conducting binary searches on sorted lists. These practical examples illustrate how different algorithms perform under various conditions and how their efficiency impacts overall performance.
+We conducted experiments to measure execution times for different operations, including:
+- Finding the maximum value in a list,
+- Performing linear searches on both unsorted and sorted data,
+- Sorting datasets using various algorithms,
+- Conducting binary searches on pre-sorted lists.
 
-Understanding these algorithms and their performance characteristics enables you to make informed decisions when solving computational problems. This knowledge is crucial for optimizing performance and managing data effectively, ensuring that applications and systems can handle large datasets efficiently and scale as needed.
+These experiments provided a clear understanding of how different algorithms behave under varying conditions, highlighting their strengths and weaknesses. For instance, we observed how sorting algorithms like **quick sort** and **insertion sort** perform on small versus large datasets, and how searching algorithms like **binary search** significantly improve performance when dealing with sorted data compared to **linear search**.
+
+By understanding the time complexities and performance characteristics of these algorithms, you can make more informed decisions when designing solutions to computational problems. This knowledge is crucial for optimizing performance, managing data effectively, and ensuring that applications can scale and handle large datasets efficiently.
 
 </details>
 
