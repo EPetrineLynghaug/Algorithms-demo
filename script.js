@@ -2,6 +2,7 @@ import { findMaxNumber } from "./modules/finde-max.js";
 import { makeRandomList } from "./modules/utils.js";
 import { linearSearch } from "./modules/linear-search.js";
 import { binarySearch } from "./modules/binary-search.js";
+import { insertionSort } from "./modules/insertionSort.js";
 
 const myList = makeRandomList(10_000_000, 10_000_000);
 // console.log(myList);
@@ -38,3 +39,11 @@ console.time("binary search");
 result = binarySearch(sortedArr, needle);
 console.log(result);
 console.timeEnd("binary search");
+
+//insertion sort//
+let randArr2 = makeRandomList(10_000_000, 1000);
+console.log("ranArr2: " + randArr2);
+
+console.time("insertion sort");
+let insertSortedArr = insertionSort(randArr2);
+console.timeEnd("insertion sort");

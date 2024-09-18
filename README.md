@@ -102,6 +102,32 @@ console.timeEnd("binary search");
 ```
 </details>
 
+
+## Sorting Algorithm: Insertion Sort
+<details>
+  <summary><strong>Click to read more</strong></summary>
+
+Insertion sort is one of the simplest sorting methods available. It is often one of the first sorting algorithms you will encounter when learning about algorithms in general. While not as efficient as quicksort, it has its own advantages:
+
+- **Easy to Implement:** Insertion sort is straightforward and can be implemented in just a few lines of code (e.g., a 3-line C++ implementation).
+- **Efficient on Small Datasets:** Despite its time complexity of O(n²), it is often faster than other algorithms on small datasets due to its simplicity.
+- **Adaptive:** If the input list is already sorted, or nearly sorted, insertion sort can outperform more theoretically efficient algorithms.
+- **Stable:** It preserves the relative order of equal elements, which is a useful property in many scenarios.
+- **In-Place:** It doesn’t require additional memory, making it memory efficient.
+
+### How It Works
+Insertion sort works by building a sorted array, one element at a time. Starting from the second element, each element is compared to those before it and inserted in the correct position.
+
+![Insertion Sort Example](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
+
+### Best Case
+Insertion sort performs very well with an already sorted list. It has a time complexity of O(n) in the best case.
+
+### Worst Case
+In the worst case, where the list is in reverse order, the time complexity is O(n²). For larger unsorted lists, other algorithms like quicksort are generally more efficient.
+
+</details>
+
 ## Conclusion
 
 <details>
