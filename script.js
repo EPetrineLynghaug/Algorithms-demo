@@ -4,6 +4,7 @@ import { linearSearch } from "./modules/linear-search.js";
 import { binarySearch } from "./modules/binary-search.js";
 import { insertionSort } from "./modules/insertionSort.js";
 import { quickSort } from "./modules/quick-sort.js";
+import { exercise } from "./modules/exercise.js";
 
 const myList = makeRandomList(10_000_000, 10_000_000);
 // console.log(myList);
@@ -47,7 +48,7 @@ console.log("ranArr2: " + randArr2);
 
 console.time("insertion sort");
 let insertSortedArr = insertionSort(randArr2);
-// console.timeEnd("insertion sort");
+console.timeEnd("insertion sort");
 
 //quick sort//
 
@@ -55,3 +56,7 @@ console.time("quick sort");
 let quickSortedArr = quickSort(randArr2);
 console.timeEnd("quick sort");
 //console.log("quickSortedArr: ");
+
+//exercise//
+console.log(exercise(10));
+console.log(exercise(1000));

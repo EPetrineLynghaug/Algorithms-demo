@@ -1,5 +1,5 @@
 function partition(arr, start, end) {
-  console.log(arr, start, end); //! ta alltid med for å sjekke at alt er der.
+  //   console.log(arr, start, end); //! ta alltid med for å sjekke at alt er der.
   // Taking the last element as the pivot
   const pivotValue = arr[end];
   let pivotIndex = start;
