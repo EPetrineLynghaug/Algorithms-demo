@@ -58,5 +58,5 @@ console.timeEnd("quick sort");
 //console.log("quickSortedArr: ");
 
 //exercise//
-console.log(exercise(10));
-console.log(exercise(1000));
+console.log(exercise(10)); // 23
+console.log(exercise(1000)); // 233168
